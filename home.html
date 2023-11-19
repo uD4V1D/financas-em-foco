@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/home.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <title>Finanças em foco</title>
+</head>
+<body>
+    <header>
+        
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="./assets/img/logo.png">
+                <a class="links" href="home.html"><u>Inicio</u></a>
+                <a class="links" href="./noticias.html"><u>Noticias</u></a>
+                <a class="links" href="./educacao.html"><u>Educação</u></a>
+                <a id="cadastroNoticiasLink" class="links" href="./noticeForm.html" style="display: none;"><u>Cadastro de Noticias</u></a>
+                <div class="entrada">
+                    <a href="formFinancas.html">Simule Seu Perfil de Investidor</a>
+                    <a id="links-entrada" href="index.html">Sair</a>
+                </div>
+            </div>
+    </header>
+
+
+    <div id="clouds-container">
+        <img src="./assets/img/Clouds2.png" alt="Nuvens">
+    </div>
+   <div class="container">
+
+        <div class="card">
+            <h1>BEM VINDO A FINANÇAS EM FOCO!!!</h1><br>
+            <p>A Finanças em Foco é uma empresa dedicada a transformar a relação das pessoas com o dinheiro. Acreditamos que a educação financeira é o alicerce para uma vida financeira bem-sucedida e realizada. Oferecemos uma gama abrangente de serviços e recursos projetados para capacitar indivíduos e famílias a tomar decisões financeiras conscientes e sustentáveis.</p>
+        </div>
+
+        <img id="img3" src="./assets/img/img3_home.png"> 
+        
+    </div> 
+    <div >
+        <img id="img1" src="./assets/img/img1_home.png">
+         <img id="img2" src="./assets/img/img2_home.png">
+    </div>   
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const isAdmin = localStorage.getItem('isAdminLoggedIn');
+            
+            if (isAdmin === 'true') {
+                document.getElementById('cadastroNoticiasLink').style.display = 'block';
+            }
+        });
+        </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body, html {
+    background-color: #A1C8F5;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+}
+
+a {
+    color: black;
+}
+
+header {
+    width: 100%;
+    height: 55px;
+    border: 1px solid black;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.cabecalho {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    margin-left: 20px;
+}
+
+.entrada {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feed_noticias {
+    width: 700px;
+    background-color: #BBEDD9;
+    height: 100vh;
+    border: 1px solid gray;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#clouds-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1; 
+}
+
+#img1 {
+    margin-top: 150px;
+}
+
+#img2 {
+    margin-top: 500px;
+}
+
+.card {
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    background-color: white;
+    width: 500px;
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#lista {
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    background-color: white;
+    width: 500px;
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px; /* Adiciona algum preenchimento para afastar o conteúdo das bordas */
+}
+.lista {
+    list-style: none;
+    padding: 0;
+    margin-top: 12px;
+}
+
+.card-button {
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    background-color: #53B869;
+    width: 200px;
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    justify-content: space-between;
+}

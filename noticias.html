@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/noticias.css">
+    <script src="./js/displayNotice.js" defer></script>
+
+    <title>Noticias</title>
+</head>
+<body>
+    <header>
+        
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="/assets/img/logo.png">
+                <a class="links" href="/home.html"><u>Inicio</u></a>
+                <a class="links" href="noticias.html"><u>Noticias</u></a>
+                <a class="links" href="educacao.html"><u>Educação</u></a>
+                <a id="cadastroNoticiasLink" class="links" href="./noticeForm.html" style="display: none;"><u>Cadastro de Noticias</u></a>
+                <div class="entrada">
+                    <a href="formFinancas.html">Simule Seu Perfil de Investidor</a>
+                    <a id="links-entrada" href="index.html">Sair</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div>
+            <img src="/assets/img/img1_noticias.png"><br><br><br><br><br><br>
+            <img src="/assets/img/img2_noticias.png">
+        </div>  
+        <div class="feed_noticias">
+            <h1><strong>Feed de noticias</strong></h1>
+            <div class="noticias" id="noticias-container">
+               
+            </div>
+        
+        </div>
+        <div>
+            <img src="/assets/img/img3_noticias.png"><br><br><br><br><br><br>
+            <img src="/assets/img/img4_noticias.png">
+        </div> 
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const isAdmin = localStorage.getItem('isAdminLoggedIn');
+            
+            if (isAdmin === 'true') {
+                document.getElementById('cadastroNoticiasLink').style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

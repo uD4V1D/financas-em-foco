@@ -1,0 +1,183 @@
+#login {
+  position: absolute;
+  top: 50%;
+  right: 60px;
+  border-radius: 50px;
+  border: 1px #000000;
+  transform: translate(0, -50%);
+}
+
+body {
+  background-color: #A1C8F5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.login-form {
+  text-align: center;
+  background-color: #BBEDD9;
+  padding: 75px;
+  border-radius: 50px;
+  border: 1px #000000;
+
+  max-width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+form {
+  margin-top: 30px;
+  width: 100%;
+
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  right: 100%;
+  padding: 17px;
+  border-radius: 30px;
+  border: none;
+}
+
+.login-button,
+.create-account-button {
+
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  color: #060606;
+  cursor: pointer;
+}
+
+.login-button {
+  background-color: #53B869;
+}
+
+.create-account-button {
+  background-color: #53B869;
+}
+
+footer {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: left;
+}
+
+.login-button,
+.create-account-button {
+  flex: 1;
+  min-width: 30px;
+  margin-left: 6px;
+  height: 37px;
+}
+
+#image-container img {
+  margin-left: 20px;
+  margin-right: 550px;
+}
+
+#image-container {
+  text-align: center;
+}
+
+
+
+#clouds-container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+ 
+}
+
+.fonte {
+  font-family: Roboto;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+.fonteBotao {
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+
+}
+.header {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  
+  z-index: 999; 
+  border-radius: 7px;
+  
+}
+
+#imageHeader {
+  margin-left: 10 px;
+}
+
+#imageHeader img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.cadastrar {
+  float: right;
+  
+}
+.esquerda{
+  float: left;
+  height: auto;
+ 
+}
+.fonteBotao {
+  text-decoration: none;
+  color: black;
+}
+
+.header__nav {
+  width: 100%;
+}
