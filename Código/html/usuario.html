@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/usuario.css">
+    <title>Editar Perfil</title>
+</head>
+<body>
+    <header>
+        
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="/assets/img/logo.png">
+                <a class="links" href="/home.html"><u>Inicio</u></a>
+                <a class="links" href="noticias.html"><u>Noticias</u></a>
+                <a class="links" href="educacao.html"><u>Educação</u></a>
+                <a id="cadastroNoticiasLink" class="links" href="./noticeForm.html" style="display: none;"><u>Cadastro de Noticias</u></a>
+                <div class="entrada">
+                    <a href="formFinancas.html">Simule Seu Perfil de Investidor</a>
+                    <a href="usuario.html">Editar perfil</a>
+                    <a id="links-entrada" href="index.html">Sair</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="card">
+        <div class="form-container">
+            <h1>Editar Perfil</h1>
+            <form id="editForm">
+                <input type="text" class="campo-login" id="novoLogin" placeholder="Novo nome de Usuário" name="novoLogin"><br><br>
+                <input type="password" class="campo-login" id="novaSenha" placeholder="Nova senha" name="novaSenha"><br><br>
+                <button type="submit">Alterar Credenciais</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="/js/usuario.js"></script>
+
+</body>
+</html>

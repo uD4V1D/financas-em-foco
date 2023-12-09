@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style_educacao.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Simulador de Investimento e Dados Financeiros</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="./assets/img/logo.png" alt="Logotipo">
+                <a class="links" href="/home.html">Inicio</a>
+                <a class="links" href="noticias.html">Noticias</a>
+                <a class="links" href="educacao.html">Educação</a>
+                <a id="cadastroNoticiasLink" class="links" href="./noticeForm.html" style="display: none">Cadastro de
+                    Noticias</a>
+            </div>
+            <div class="entrada">
+                <a href="formFinancas.html">Simule Seu Perfil de Investidor</a>
+                <a href="usuario.html">Editar perfil</a>
+                <a id="links-entrada" href="index.html">Sair</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div id="informacoes">
+        <div>
+            <img src="./public/informacao.svg">
+        </div>
+        <div class="descricao">
+            <h1><strong>O que vou encontrar aqui?</strong></h1>
+            <h4>Iniciante</h4>
+            <p>
+                Descubra o caminho para o conhecimento financeiro, começando pela fase inicial, onde exploramos o perfil
+                da pessoa iniciante.
+                Você terá acesso a informações cruciais sobre os conceitos básicos de finanças pessoais e os primeiros
+                passos para adentrar o mundo dos investimentos.
+            </p>
+            <h4>Moderado</h4>
+            <p>
+                Avance para o perfil moderado e explore estratégias mais aprofundadas de diversificação de
+                investimentos,
+                análises econômicas e técnicas para gerir seu portfólio com segurança e crescimento.
+            </p>
+            <h4>Avançado</h4>
+            <p>
+                Além disso, mergulhe no perfil avançado, onde desvendamos estratégias sofisticadas de investimento,
+                abordagens para investimentos alternativos e técnicas avançadas de gestão de risco.
+                Descubra como os investidores experientes se mantêm atualizados sobre tendências globais e inovações
+                financeiras.
+
+            </p>
+            <h4>Simulador</h4>
+            <p>
+                Descubra o Simulador de Investimentos! Experimente diferentes estratégias sem riscos reais. Explore como
+                suas decisões afetam seus ganhos e objetivos financeiros. Aprenda e aprimore suas estratégias antes de
+                aplicá-las no mundo real. Prepare-se para tomar decisões informadas e confiantes. Vamos começar a
+                simular!
+            </p>
+        </div>
+    </div>
+    <div id="container">
+        <button onclick="scrollToCard('iniciante')" class="perfis">Iniciante</button>
+        <button onclick="scrollToCard('intermediario')" class="perfis">Moderado</button>
+        <button onclick="scrollToCard('avancado')" class="perfis">Avançado</button>
+        <script>
+            function scrollToCard(cardId) {
+                var card = document.getElementById(cardId);
+                card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        </script>
+    </div>
+    <div id="iniciante" class="descricao-perfis">
+
+        <div class="descricao">
+            <h1><strong>Iniciante</strong></h1>
+            <h4>Orçamento Pessoal</h4>
+            <p>
+                Aprender a fazer um orçamento é fundamental. É o ponto de partida para entender suas despesas, receitas
+                e onde seu dinheiro está sendo gasto.
+            </p>
+            <h4>Dívidas e Crédito</h4>
+            <p>
+                Compreender como as dívidas funcionam, como pagar dívidas existentes e como usar o crédito de maneira
+                responsável é essencial para manter uma saúde financeira estável.
+            </p>
+            <h4>Educação Financeira Básica</h4>
+            <p>
+                Conhecimento sobre juros compostos, diferenças entre tipos de contas de poupança e investimentos de
+                baixo risco são pilares importantes.
+            </p>
+            <h4>Investimentos Iniciais</h4>
+            <p>
+                Entender a diferença entre ativos de renda fixa e variável, como ações e títulos, e começar a explorar o
+                básico dos mercados financeiros é um passo inicial.
+            </p>
+        </div>
+        <div>
+            <img src="./public/intermediate.svg" width="500px">
+        </div>
+    </div>
+
+    <div id="descricao-perfis2">
+        <div>
+            <img src="./public/begginer.svg" width="500px">
+        </div>
+        <div id="intermediario" class="descricao">
+            <h1><strong>Intermediário</strong></h1>
+            <h4>Investimentos Mais Diversificados</h4>
+            <p>
+                Explorar opções além de ações e títulos, como fundos mútuos, ETFs (Exchange Traded Funds), investimentos
+                imobiliários, commodities ou até mesmo criptomoedas.
+            </p>
+            <h4>Aprofundamento em Estratégias de Investimento</h4>
+            <p>
+                Compreender a análise fundamentalista e técnica, aprender a avaliar empresas e entender melhor os riscos
+                e as potenciais recompensas dos diferentes tipos de investimento.
+            </p>
+            <h4>Planejamento Tributário</h4>
+            <p>
+                Conhecer estratégias para minimizar a carga tributária sobre os investimentos, como o uso de contas de
+                aposentadoria, benefícios fiscais e estratégias de declaração de impostos.
+            </p>
+            <h4>Gestão de Risco Avançada</h4>
+            <p>
+                Compreender técnicas de mitigação de riscos, como o uso de opções de venda, estratégias de hedge e
+                diversificação estratégica.
+            </p>
+        </div>
+
+    </div>
+    <div id="descricao-perfis3">
+
+        <div id="avancado" class="descricao">
+            <h1><strong>Avançado</strong></h1>
+            <h4>Investimentos Altamente Complexos</h4>
+            <p>
+                Explorar investimentos alternativos como private equity, venture capital, derivativos sofisticados e
+                estratégias de trading avançadas.
+            </p>
+            <h4>Análise Profunda do Mercado</h4>
+            <p>
+                Compreender tendências macroeconômicas globais, políticas monetárias, efeitos geopolíticos nos mercados
+                e antecipação de movimentos do mercado.
+            </p>
+            <h4>Gestão de Portfólio e Estratégias Avançadas</h4>
+            <p>
+                Desenvolver estratégias personalizadas de gerenciamento de portfólio, envolvendo técnicas de arbitragem,
+                alavancagem e construção de carteiras complexas.
+            </p>
+            <h4>Planejamento Tributário e Jurídico Complexo</h4>
+            <p>
+                Entender profundamente as ramificações legais e fiscais de estruturas de investimento mais complexas.
+            </p>
+        </div>
+        <div>
+            <img src="./public/professional.svg" width="500px">
+        </div>
+    </div>
+
+
+    <div id="calculadora">
+
+        <label for="valor">Digite o valor inicial:</label>
+        <input type="number" id="valor"><br><br>
+
+        <label for="tempo">Digite o tempo em anos:</label>
+        <input type="number" id="tempo"><br><br>
+
+        <label for="taxa">Taxa de Juros Anual:</label>
+        <input type="number" id="taxa"><br><br>
+
+        <button onclick="calcularMontante()">Calcular</button><br><br>
+
+        <p>O montante final é: <span id="montante"></span></p>
+    </div>
+    <script>
+        function calcularMontante() {
+            var taxa = parseFloat(document.getElementById("taxa").value);
+            var tempo = parseInt(document.getElementById("tempo").value);
+            var valor = parseFloat(document.getElementById("valor").value);
+
+            taxa = taxa / 100;
+
+            var montante = valor * Math.pow(1 + taxa, tempo);
+
+            document.getElementById("montante").textContent = montante.toFixed(2);
+        }
+    </script>
+
+
+
+</body>
+
+</html>
