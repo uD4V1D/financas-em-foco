@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/formsProfile.css">
+    <title>Simulador de Perfil de Investimento</title>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="./assets/img/logo.png">
+                <a class="links" href="/home.html"><u>Inicio</u></a>
+                <a class="links" href="noticias.html"><u>Noticias</u></a>
+                <a class="links" href="educacao.html"><u>Educação</u></a>
+                <a id="cadastroNoticiasLink" class="links" href="./noticeForm.html" style="display: none"><u>Cadastro de Noticias</u></a>
+                <div class="entrada">
+                    <a href="formFinancas.html">Simule Seu Perfil de Investidor</a>
+                    <a href="usuario.html">Editar perfil</a>
+                    <a id="links-entrada" href="index.html">Sair</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Simulador de Perfil de Investimento</h1>
+        <form class="forms" id="investmentProfileForm">
+            <h3>Faixa Salarial</h3>
+            <select class="card" id="faixaSalarial" name="faixaSalarial">
+                <option value="0">Selecione uma opção</option>
+                <option value="1">Menos de 1 salário mínimo</option>
+                <option value="2">1 a 3 salários mínimos</option>
+                <option value="3">3 a 5 salários mínimos</option>
+                <option value="4">Mais de 5 salários mínimos</option>
+            </select>
+
+            <h3>Objetivos de Investimento</h3>
+            <select class="card" id="objetivosInvestimento" name="objetivosInvestimento">
+                <option value="0">Selecione uma opção</option>
+                <option value="1">Construir reserva de emergência</option>
+                <option value="2">Preservar capital com segurança</option>
+                <option value="3">Obter renda estável com investimentos</option>
+                <option value="4">Crescimento de capital a longo prazo</option>
+            </select>
+
+            <h3>Experiência com Investimentos</h3>
+            <select class="card" id="experienciaInvestimentos" name="experienciaInvestimentos">
+                <option value="0">Selecione uma opção</option>
+                <option value="1">Nenhuma experiência</option>
+                <option value="2">Experiência básica</option>
+                <option value="3">Experiência moderada</option>
+                <option value="4">Experiência avançada</option>
+            </select>
+
+            <button type="button" class="card-button" onclick="calculateProfile()">Calcular Perfil</button>
+        </form>
+
+        <p id="profileResult"></p>
+        <p id="profileDescription"></p>
+    </div>
+
+    <script src="./js/profileSimulator.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const isAdmin = localStorage.getItem("isAdminLoggedIn");
+
+        if (isAdmin === "true") {
+          document.getElementById("cadastroNoticiasLink").style.display = "block";
+        }
+      });
+  </script>
+</body>
+</html>

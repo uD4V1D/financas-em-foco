@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/noticeForm.css" />
+    <title>Formulário de Notícias</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="cabecalho">
+        <div class="logo">
+          <img src="./assets/img/logo.png" />
+          <a class="links" href="./home.html"><u>Inicio</u></a>
+          <a class="links" href="./noticias.html"><u>Noticias</u></a>
+          <a class="links" href="./educacao.html"><u>Educação</u></a>
+          <a
+            id="cadastroNoticiasLink"
+            class="links"
+            href="./noticeForm.html"
+            style="display: none"
+            ><u>Cadastro de Noticias</u></a
+          >
+          <div class="entrada">
+            <a href="formFinancas.html">Simule Seu Perfil de Investidor</a>
+            <a href="usuario.html">Editar perfil</a>
+            <a id="links-entrada" href="index.html">Sair</a>
+        </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div>
+        <img id="img1" src="/assets/img/forms1.png" />
+      </div>
+      <div class="feed_noticias">
+        <h1><strong>Formulário de Notícias</strong></h1>
+        <form class="forms" id="noticiaForm">
+          <h3>Título da Notícia</h3>
+          <input
+            class="card"
+            type="text"
+            id="titulo"
+            name="titulo"
+            placeholder="Título da Notícia"
+            required
+          /><br />
+
+          <h3>Descrição</h3>
+          <textarea
+            class="card"
+            id="descricao"
+            name="descricao"
+            rows="4"
+            placeholder="Descrição da Notícia"
+            required
+          ></textarea
+          ><br />
+
+          <h3>URL do Vídeo</h3>
+          <input
+            class="card"
+            type="url"
+            id="urlVideo"
+            name="urlVideo"
+            placeholder="URL do Vídeo"
+          /><br />
+
+          <input type="hidden" id="editIndex" value="-1">
+          <input class="card-button" type="submit" value="Adicionar Notícia" />
+        </form>
+      </div>
+      <div>
+        <img id="img2" src="/assets/img/forms2.png" />
+      </div>
+    </div>
+    <div id="clouds-container">
+      <img src="/assets/img/Clouds2.png" alt="Nuvens" />
+    </div>
+    <script src="./js/notice.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const isAdmin = localStorage.getItem("isAdminLoggedIn");
+
+        if (isAdmin === "true") {
+          document.getElementById("cadastroNoticiasLink").style.display =
+            "block";
+        }
+      });
+    </script>
+  </body>
+</html>
